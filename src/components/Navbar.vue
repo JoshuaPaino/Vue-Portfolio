@@ -17,7 +17,7 @@ import RiGithubFill from "~icons/ri/github-fill";
 import RiTwitterFill from "~icons/ri/twitter-fill";
 </script>
 <template>
-  <div
+  <nav
     class="fixed dark:bg-slate-800 bg-white w-full h-[120px] z-50 shadow-xl p-4"
   >
     <div class="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -52,25 +52,33 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
           >
           <button @click="toggleDark()" class="ml-10">
             <div v-if="isDark === true">
-              <MaterialSymbolsModeNightRounded class="text-yellow-300" />
+              <MaterialSymbolsModeNightRounded
+                alt="Dark Mode"
+                class="text-yellow-300"
+              />
             </div>
-            <div v-else><IcBaselineWbSunny /></div>
+            <div v-else><IcBaselineWbSunny alt="Light Mode" /></div>
           </button>
         </ul>
       </div>
       <!-- Desktop  End -->
       <!-- Mobile Menu Start -->
       <div class="md:hidden flex">
-        <MaterialSymbolsMenu style="font-size: 1.8rem" @click="toggle()" />
+        <MaterialSymbolsMenu
+          style="font-size: 1.8rem"
+          alt="Menu"
+          @click="toggle()"
+        />
         <button @click="toggleDark()" class="ml-6">
           <div v-if="isDark === true">
             <MaterialSymbolsModeNightRounded
               style="font-size: 1.5rem"
               class="text-yellow-300"
+              alt="Dark Mode"
             />
           </div>
           <div v-else>
-            <IcBaselineWbSunny style="font-size: 1.5rem" />
+            <IcBaselineWbSunny alt="Light Mode" style="font-size: 1.5rem" />
           </div>
         </button>
       </div>
@@ -99,6 +107,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
               @click="toggle()"
             >
               <IcBaselineClose
+                alt="Menu"
                 style="font-size: 1.2rem"
                 class="dark:text-black"
               />
@@ -151,6 +160,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
               >
                 <RiLinkedinFill
+                  alt="Linkedin"
                   class="dark:text-blue-800 text-blue-800 text-2xl"
                 />
               </a>
@@ -160,7 +170,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 target="_blank"
                 class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
               >
-                <RiGithubFill class="dark:text-black text-2xl" />
+                <RiGithubFill alt="Github" class="dark:text-black text-2xl" />
               </a>
 
               <a
@@ -169,6 +179,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
               >
                 <RiTwitterFill
+                  alt="Twitter"
                   class="dark:text-blue-600 text-blue-600 text-2xl"
                 />
               </a>
@@ -178,10 +189,11 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 <div v-if="isDark === true">
                   <MaterialSymbolsModeNightRounded
                     class="text-yellow-300 text-4xl"
+                    alt="Dark Mode"
                   />
                 </div>
                 <div v-else>
-                  <IcBaselineWbSunny class="text-4xl" />
+                  <IcBaselineWbSunny alt="Light Mode" class="text-4xl" />
                 </div>
               </button>
             </div>
@@ -191,7 +203,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
       </div>
     </div>
     <!-- Transition for this -->
-  </div>
+  </nav>
 </template>
 <!--  -->
 <style>

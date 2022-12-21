@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-screen text-cent" id="home">
+  <div class="w-full h-screen text-center" id="home">
     <div
-      class="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
+      class="max-w-[1240px] w-full h-full text-center mx-auto flex justify-center items-center"
     >
       <div>
         <p
@@ -9,10 +9,10 @@
         >
           Let's build something together
         </p>
-        <h1 class="text-center text-4xl py-2">Hi, I'm Name</h1>
-        <h1 class="text-center text-2xl mt-4 mb-4">
+        <h1 class="text-4xl py-4">Hi, I'm Name</h1>
+        <h2 class="text-center text-2xl mt-4 mb-4">
           Typewritter JS + Constant vars
-        </h1>
+        </h2>
         <p class="py-4 max-w-[70%] m-auto text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis,
           enim eu iaculis hendrerit, lectus mauris consequat dolor, ut
@@ -20,13 +20,16 @@
           posuere sodales. Duis massa nunc, egestas quis bibendum sed, volutpat
           nec ex.
         </p>
-        <div class="flex justify-around p-8">
+        <div class="flex items-center max-w-[330px] justify-between m-auto p-8">
           <a
             href="https://www.linkedin.com/"
             target="_blank"
             class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
           >
-            <RiLinkedinFill class="dark:text-blue-800 text-blue-800 text-2xl" />
+            <RiLinkedinFill
+              alt="Linkedin"
+              class="dark:text-blue-800 text-blue-800 text-2xl"
+            />
           </a>
 
           <a
@@ -34,7 +37,7 @@
             target="_blank"
             class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
           >
-            <RiGithubFill class="dark:text-black text-2xl" />
+            <RiGithubFill alt="Github" class="dark:text-black text-2xl" />
           </a>
 
           <a
@@ -42,7 +45,10 @@
             target="_blank"
             class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
           >
-            <RiTwitterFill class="dark:text-blue-600 text-blue-600 text-2xl" />
+            <RiTwitterFill
+              alt="Twitter"
+              class="dark:text-blue-600 text-blue-600 text-2xl"
+            />
           </a>
         </div>
       </div>
@@ -54,4 +60,5 @@ import RiLinkedinFill from "~icons/ri/linkedin-fill";
 import RiGithubFill from "~icons/ri/github-fill";
 import RiTwitterFill from "~icons/ri/twitter-fill";
 </script>
+
 <style lang=""></style>

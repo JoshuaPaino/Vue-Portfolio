@@ -7,5 +7,5 @@ import Skills from "../components/Skills.vue";
 <template>
   <Navbar />
   <Hero />
-  <Skills />
+  <!-- <Skills /> -->
 </template>

@@ -48,7 +48,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
           >
           <button @click="toggleDark()" class="ml-10">
             <div v-if="isDark === true">
-              <MaterialSymbolsModeNightRounded />
+              <MaterialSymbolsModeNightRounded class="text-yellow-300" />
             </div>
             <div v-else><IcBaselineWbSunny /></div>
           </button>
@@ -137,7 +137,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
             >
           </ul>
           <!-- Socials -->
-          <div class="pt-40">
+          <div class="pt-20 sm:pt-40">
             <!-- Add a font color to this based on logo -->
             <p class="uppercase tracking-widest">Let's Connect</p>
             <div class="flex justify-around p-8">
@@ -169,18 +169,18 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 />
               </a>
             </div>
-          </div>
-          <div class="flex justify-center items-center pt-20">
-            <button @click="toggleDark()">
-              <div v-if="isDark === true">
-                <MaterialSymbolsModeNightRounded
-                  class="text-yellow-300 text-4xl"
-                />
-              </div>
-              <div v-else>
-                <IcBaselineWbSunny class="text-4xl" />
-              </div>
-            </button>
+            <div class="flex justify-center items-center pt-20">
+              <button @click="toggleDark()">
+                <div v-if="isDark === true">
+                  <MaterialSymbolsModeNightRounded
+                    class="text-yellow-300 text-4xl"
+                  />
+                </div>
+                <div v-else>
+                  <IcBaselineWbSunny class="text-4xl" />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
         <!-- Sidebar Menu -->

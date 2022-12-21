@@ -3,6 +3,8 @@
 import { useDark, useToggle } from "@vueuse/core";
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
+// Menu Open
+const [show, toggle] = useToggle();
 // Icons
 import MaterialSymbolsMenu from "~icons/material-symbols/menu";
 import IcBaselineWbSunny from "~icons/ic/baseline-wb-sunny";
@@ -52,7 +54,7 @@ import IcBaselineClose from "~icons/ic/baseline-close";
       <!-- Desktop  End -->
       <!-- Mobile Menu Start -->
       <div class="md:hidden flex">
-        <MaterialSymbolsMenu style="font-size: 1.8rem" />
+        <MaterialSymbolsMenu style="font-size: 1.8rem" @click="toggle()" />
         <button @click="toggleDark()" class="ml-6">
           <div v-if="isDark === true">
             <MaterialSymbolsModeNightRounded style="font-size: 1.5rem" />
@@ -64,9 +66,12 @@ import IcBaselineClose from "~icons/ic/baseline-close";
     </div>
     <div
       class="fixed left-0 top-0 w-full h-screen dark:bg-black/30 bg-black/80 md:hidden"
+      :style="{
+        visibility: show ? 'visible' : 'hidden',
+      }"
     >
       <div
-        class="md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen bg-white p-6 ease-in duration-500"
+        class="md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen dark:bg-gray-600 bg-white p-6"
       >
         <div class="flex w-full items-center justify-between">
           <img
@@ -77,7 +82,8 @@ import IcBaselineClose from "~icons/ic/baseline-close";
           />
           <div>
             <Button
-              class="rounded-full shadow-lg cursor-pointer shadow-gray-400 p-2"
+              class="rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-black p-2"
+              @click="toggle()"
             >
               <IcBaselineClose
                 style="font-size: 1.2rem"
@@ -86,6 +92,8 @@ import IcBaselineClose from "~icons/ic/baseline-close";
             </Button>
           </div>
         </div>
+        <p>lorem Ipsum</p>
+        <p>Value: {{ show ? "ON" : "OFF" }}</p>
       </div>
     </div>
   </div>

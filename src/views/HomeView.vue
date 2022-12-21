@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import Hero from "../components/Hero.vue";
+import Navbar from "../components/Navbar.vue";
+import Skills from "../components/Skills.vue";
+</script>
 
 <template>
-  <main>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </main>
+  <Navbar />
+  <Hero />
+  <Skills />
 </template>

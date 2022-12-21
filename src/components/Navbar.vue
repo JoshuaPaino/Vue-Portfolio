@@ -5,6 +5,8 @@ const isDark = useDark();
 const toggleDark = useToggle(isDark);
 // Menu Open
 const [show, toggle] = useToggle();
+// Click Outside
+
 // Icons
 import MaterialSymbolsMenu from "~icons/material-symbols/menu";
 import IcBaselineWbSunny from "~icons/ic/baseline-wb-sunny";
@@ -15,7 +17,9 @@ import RiGithubFill from "~icons/ri/github-fill";
 import RiTwitterFill from "~icons/ri/twitter-fill";
 </script>
 <template>
-  <div class="fixed w-full h-[120px] shadow-xl z-[100] p-4">
+  <div
+    class="fixed dark:bg-slate-800 bg-white w-full h-[120px] z-50 shadow-xl p-4"
+  >
     <div class="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <img
         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"

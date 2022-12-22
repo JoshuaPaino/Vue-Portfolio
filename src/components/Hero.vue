@@ -11,7 +11,17 @@
         </p>
         <h1 class="text-4xl py-4">Hi, I'm Name</h1>
         <h2 class="text-center text-2xl mt-4 mb-4">
-          Typewritter JS + Constant vars
+          Typewritter JS + Constant vars <br />
+          <!-- Missing Animations (Animista or Animate.css)<br />
+          Sections links <br />
+          Head <br />
+          Logo <br />
+          Page Name <br />
+          SEO <br />
+          (Vue)Page Transitions <br />
+          (VeeValidate)Form <br />
+          Refactoring <br />
+          Color <br /> -->
         </h2>
         <p class="py-4 max-w-[70%] m-auto text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis,

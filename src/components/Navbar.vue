@@ -6,7 +6,8 @@ const toggleDark = useToggle(isDark);
 // Menu Open
 const [show, toggle] = useToggle();
 // Click Outside
-
+// Components
+import Socials from "../components/Socials.vue";
 // Icons
 import MaterialSymbolsMenu from "~icons/material-symbols/menu";
 import IcBaselineWbSunny from "~icons/ic/baseline-wb-sunny";
@@ -139,7 +140,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 >
               </li></router-link
             >
-            <router-link to="/"
+            <router-link to="/#projects"
               ><li class="py-4 text-lg">
                 <span class="border-blue-800 dark:border-white hover:border-b"
                   >Projects</span
@@ -158,40 +159,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
           <div class="pt-20 sm:pt-40">
             <!-- Add a font color to this based on logo -->
             <p class="uppercase tracking-widest">Let's Connect</p>
-            <div class="flex justify-around p-8">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-              >
-                <RiLinkedinFill
-                  alt="Linkedin"
-                  class="dark:text-blue-800 text-blue-800 text-2xl"
-                />
-              </a>
-
-              <a
-                href="https://www.github.com/"
-                target="_blank"
-                class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-              >
-                <RiGithubFill
-                  alt="Github"
-                  class="text-black dark:text-black text-2xl"
-                />
-              </a>
-
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-              >
-                <RiTwitterFill
-                  alt="Twitter"
-                  class="dark:text-blue-600 text-blue-600 text-2xl"
-                />
-              </a>
-            </div>
+            <Socials />
             <div class="flex justify-center items-center pt-20">
               <button @click="toggleDark()">
                 <div v-if="isDark === true">

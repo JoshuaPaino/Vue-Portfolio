@@ -3,7 +3,8 @@ import Hero from "../components/Hero.vue";
 import Navbar from "../components/Navbar.vue";
 import Projects from "../components/Projects.vue";
 import Skills from "../components/Skills.vue";
-import ScrollTop from "../components/ScrollTop.vue";
+
+import Contact from "../components/Contact.vue";
 </script>
 
 <template>
@@ -11,5 +12,5 @@ import ScrollTop from "../components/ScrollTop.vue";
   <Hero />
   <Skills />
   <Projects />
-  <ScrollTop />
+  <Contact />
 </template>

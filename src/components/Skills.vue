@@ -1,32 +1,234 @@
 <template>
-  <div class="w-full h-screen text-cent">
-    <div
-      class="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
-    >
-      <div>
-        <p
-          class="uppercase text-sm text-center tracking-widest text-gray-600 dark:text-yellow-300"
+  <div class="w-full lg:h-screen p-2">
+    <div class="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+      <p class="text-xl tracking-widest uppercase">Skills</p>
+      <h2 class="py-4 text-2xl font-bold">What I Can do</h2>
+      <!--  -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
         >
-          Let's build something together
-        </p>
-        <h1 class="text-center text-4xl py-2">Hi, I'm Name</h1>
-        <h1 class="text-center text-2xl mt-4 mb-4">
-          Typewritter JS + Constant vars
-        </h1>
-        <p class="py-4 max-w-[70%] m-auto text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis,
-          enim eu iaculis hendrerit, lectus mauris consequat dolor, ut
-          pellentesque urna orci at magna. Maecenas tristique quam aliquet
-          posuere sodales. Duis massa nunc, egestas quis bibendum sed, volutpat
-          nec ex.
-        </p>
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">HTML</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">CSS</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Sass</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Tailwind</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">JS</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">TS</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Ruby</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Rails</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">React</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item Start -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Next</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Vue</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Nuxt</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Firebase</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Sanity</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Github</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
+        <div
+          class="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        >
+          <div class="grid grid-cols-2 gap-4 justify-center items-center">
+            <div class="m-auto">
+              <img src="../assets/logo.svg" width="64px" height="64px" />
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-4xl">Gitlab</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Item End -->
       </div>
+      <!--  -->
     </div>
   </div>
 </template>
-<script setup>
-import RiLinkedinFill from "~icons/ri/linkedin-fill";
-import RiGithubFill from "~icons/ri/github-fill";
-import RiTwitterFill from "~icons/ri/twitter-fill";
-</script>
+<script></script>
 <style lang=""></style>

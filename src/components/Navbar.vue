@@ -86,13 +86,18 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
     </div>
     <!-- Add a Transition for this -->
     <div
-      class="fixed left-0 top-0 w-full h-screen dark:bg-black/67 bg-black/90 md:hidden"
-      :style="{
-        visibility: show ? 'visible' : 'hidden',
-      }"
+      :class="
+        show
+          ? 'fixed left-0 top-0 w-full h-screen dark:bg-black/67 bg-black/90 md:hidden fade duration-300'
+          : ''
+      "
     >
       <div
-        class="md:hidden fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen dark:bg-slate-800 bg-white p-6"
+        :class="
+          show
+            ? 'fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen dark:bg-slate-800 bg-white p-6 ease-in duration-500'
+            : 'fixed left-[-100%] top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen dark:bg-slate-800 bg-white p-6 duration-500'
+        "
       >
         <div class="flex w-full items-center justify-between">
           <img
@@ -109,7 +114,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
               <IcBaselineClose
                 alt="Menu"
                 style="font-size: 1.2rem"
-                class="dark:text-black"
+                class="dark:text-black text-black"
               />
             </Button>
           </div>
@@ -170,7 +175,10 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
                 target="_blank"
                 class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
               >
-                <RiGithubFill alt="Github" class="dark:text-black text-2xl" />
+                <RiGithubFill
+                  alt="Github"
+                  class="text-black dark:text-black text-2xl"
+                />
               </a>
 
               <a

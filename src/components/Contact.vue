@@ -37,7 +37,45 @@
         <div
           class="col-span-3 lg:col-span-3 w-full h-auto shadow-xl rounded-xl lg:p-4"
         >
-          <div class="p-4">Vee-Validate-Form</div>
+          <div class="p-4">
+            <form>
+              <div class="w-full bg-green-200 rounded-lg p-6 text-center">
+                <h1 class="uppercase tracking-wide dark:text-black">
+                  Form has been Submitted
+                </h1>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4 w-full py-2">
+                <div class="flex flex-col">
+                  <label class="uppercase text-sm py-2">Name</label>
+                  <input type="text" class="border-2 rounded-lg p-3 flex" />
+                </div>
+                <div class="flex flex-col">
+                  <label class="uppercase text-sm py-2">Phone Number</label>
+                  <input type="text" class="border-2 rounded-lg p-3 flex" />
+                </div>
+              </div>
+              <div class="flex flex-col w-full py-2">
+                <label class="uppercase text-sm py-2">Email</label>
+                <input type="text" class="border-2 rounded-lg p-3 flex" />
+              </div>
+              <div class="flex flex-col w-full py-2">
+                <label class="uppercase text-sm py-2">Message</label>
+                <textarea
+                  type="text"
+                  cols="30"
+                  rows="10"
+                  class="border-2 rounded-lg p-3 flex"
+                />
+              </div>
+
+              <button
+                class="w-full bg-green-100 p-2 rounded-lg mt-6 dark:text-black"
+                @click.prevent=""
+              >
+                Conditional Button
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

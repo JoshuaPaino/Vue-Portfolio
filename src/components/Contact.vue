@@ -24,12 +24,11 @@
                 bibendum sed, volutpat nec ex.
               </p>
             </div>
-            <!-- Social -->
             <div>
               <p class="uppercase pt-8">Connect With Me</p>
-              <!--  -->
-              <Socials />
-              <!--  -->
+              <div class="flex justify-around p-8">
+                <Socials />
+              </div>
             </div>
           </div>
         </div>

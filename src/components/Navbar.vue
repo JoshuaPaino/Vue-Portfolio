@@ -8,6 +8,8 @@ const [show, toggle] = useToggle();
 // Click Outside
 // Components
 import Socials from "../components/Socials.vue";
+import NavD from "./NavlinksDesktop.vue";
+import NavM from "./NavlinksMobile.vue";
 // Icons
 import MaterialSymbolsMenu from "~icons/material-symbols/menu";
 import IcBaselineWbSunny from "~icons/ic/baseline-wb-sunny";
@@ -31,26 +33,7 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
       <div>
         <!-- Desktop Start -->
         <ul class="hidden md:flex">
-          <router-link
-            to="/"
-            class="ml-10 text-lg uppercase border-blue-800 dark:border-white hover:border-b"
-            >Home</router-link
-          >
-          <router-link
-            to="/"
-            class="ml-10 text-lg border-blue-800 dark:border-white uppercase hover:border-b"
-            >Skills</router-link
-          >
-          <router-link
-            to="/"
-            class="ml-10 text-lg border-blue-800 dark:border-white uppercase hover:border-b"
-            >Projects</router-link
-          >
-          <router-link
-            to="/"
-            class="ml-10 text-lg border-blue-800 uppercase dark:border-white hover:border-b"
-            >Contact</router-link
-          >
+          <NavD />
           <button @click="toggleDark()" class="ml-10">
             <div v-if="isDark === true">
               <MaterialSymbolsModeNightRounded
@@ -126,40 +109,18 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
         <!-- Sidebar Menu -->
         <div class="py-4 flex flex-col">
           <ul class="uppercase">
-            <router-link to="/"
-              ><li class="py-4 text-lg">
-                <span class="border-blue-800 dark:border-white hover:border-b"
-                  >Home</span
-                >
-              </li></router-link
-            >
-            <router-link to="/"
-              ><li class="py-4 text-lg">
-                <span class="border-blue-800 dark:border-white hover:border-b"
-                  >Skills</span
-                >
-              </li></router-link
-            >
-            <router-link to="/#projects"
-              ><li class="py-4 text-lg">
-                <span class="border-blue-800 dark:border-white hover:border-b"
-                  >Projects</span
-                >
-              </li></router-link
-            >
-            <router-link to="/"
-              ><li class="py-4 text-lg">
-                <span class="border-blue-800 dark:border-white hover:border-b"
-                  >Contact</span
-                >
-              </li></router-link
-            >
+            <!--  -->
+            <NavM />
+            <!--  -->
           </ul>
           <!-- Socials -->
           <div class="pt-20 sm:pt-40">
             <!-- Add a font color to this based on logo -->
             <p class="uppercase tracking-widest">Let's Connect</p>
-            <Socials />
+            <div class="flex justify-around p-8">
+              <Socials />
+            </div>
+
             <div class="flex justify-center items-center pt-20">
               <button @click="toggleDark()">
                 <div v-if="isDark === true">

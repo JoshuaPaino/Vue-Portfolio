@@ -25,5 +25,16 @@
       { "id": "14" ,"name": "firebase", "Icon" : "logos:firebase"},
       {"id": "15" ,"name": "rails", "Icon" : "mdi:language-ruby-on-rails"},
       { "id": "16" ,"name": "Sinatra", "Icon" : "logos:sinatra"}
+    ],
+    "navLinks": [
+      { "id": "1" , "link": "Home", "location" : "/" },
+      {"id": "2" ,"link": "Skills", "location" : "/" },
+      { "id": "3" ,"link": "Projects", "location" : "/" },
+      {"id": "4" ,"link": "Contact", "location" : "/" }
+    ],
+    "socialLinks": [
+      { "id": "1" , "name": "Linkedin", "location" : "https://www.linkedin.com/" , "Icon" : "ri:linkedin-fill"},
+      {"id": "2" ,"name": "Github", "location" : "https://www.github.com/", "Icon" : "ri:github-fill"},
+      { "id": "3" ,"name": "Twitter", "location" : "https://www.twitter.com/", "Icon" : "ri:twitter-fill"}
     ]
 }

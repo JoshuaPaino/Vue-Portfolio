@@ -10,8 +10,8 @@
           Let's build something together
         </p>
         <h1 class="text-4xl py-4">Hi, I'm Name</h1>
-        <h2 class="text-center text-2xl mt-4 mb-4">
-          Typewritter JS + Constant vars <br />
+        <h2 class="text-center text-2xl mt-2 mb-4">
+          <i>Web Developer </i><br />
           <!-- Missing Animations (Animista or Animate.css)<br />
           Sections links <br />
           Head <br />
@@ -20,7 +20,6 @@
           SEO <br />
           (Vue)Page Transitions <br />
           (VeeValidate)Form <br />
-          Refactoring <br />
           Color <br /> -->
         </h2>
         <p class="py-4 max-w-[70%] m-auto text-sm">
@@ -31,44 +30,12 @@
           nec ex.
         </p>
         <div class="flex items-center max-w-[330px] justify-between m-auto p-8">
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-          >
-            <RiLinkedinFill
-              alt="Linkedin"
-              class="dark:text-blue-800 text-blue-800 text-2xl"
-            />
-          </a>
-
-          <a
-            href="https://www.github.com/"
-            target="_blank"
-            class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-          >
-            <RiGithubFill alt="Github" class="dark:text-black text-2xl" />
-          </a>
-
-          <a
-            href="https://www.twitter.com/"
-            target="_blank"
-            class="rounded-full shadow-lg bg-gray-300 cursor-pointer shadow-gray-600 dark:shadow-black p-2"
-          >
-            <RiTwitterFill
-              alt="Twitter"
-              class="dark:text-blue-600 text-blue-600 text-2xl"
-            />
-          </a>
+          <Socials />
         </div>
       </div>
     </div>
   </div>
 </template>
 <script setup>
-import RiLinkedinFill from "~icons/ri/linkedin-fill";
-import RiGithubFill from "~icons/ri/github-fill";
-import RiTwitterFill from "~icons/ri/twitter-fill";
+import Socials from "./Socials.vue";
 </script>
-
-<style lang=""></style>

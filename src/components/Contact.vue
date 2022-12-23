@@ -38,8 +38,10 @@
           class="col-span-3 lg:col-span-3 w-full h-auto shadow-xl rounded-xl lg:p-4"
         >
           <div class="p-4">
-            <form>
-              <div class="w-full bg-green-200 rounded-lg p-6 text-center">
+            <form class="my-auto">
+              <div
+                class="hidden w-full bg-green-200 rounded-lg p-6 text-center"
+              >
                 <h1 class="uppercase tracking-wide dark:text-black">
                   Form has been Submitted
                 </h1>

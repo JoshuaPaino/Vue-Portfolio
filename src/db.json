@@ -1,0 +1,29 @@
+{
+    "projects": [
+      { "id": "1" ,"title": "title", "description" : "loremIpsum" },
+      {"id": "2" ,"title": "title", "description" : "loremIpsum"},
+      { "id": "3" ,"title": "title", "description" : "loremIpsum"},
+      {"id": "4" ,"title": "title", "description" : "loremIpsum"},
+      { "id": "5" ,"title": "title", "description" : "loremIpsum"},
+      {"id": "6" ,"title": "title", "description" : "loremIpsum"},
+      { "id": "7" ,"title": "title", "description" : "loremIpsum"}
+    ],
+    "skills": [
+      { "id": "1" ,"name": "HTML5", "Icon" : "logos:html-5" },
+      {"id": "2" ,"name": "CSS", "Icon" : "logos:css-3"},
+      { "id": "3" ,"name": "javascript", "Icon" : "logos:javascript"},
+      {"id": "4" ,"name": "typescript", "Icon" : "logos:typescript-icon"},
+      { "id": "5" ,"name": "Sass", "Icon" : "logos:sass"},
+      {"id": "6" ,"name": "Tailwind", "Icon" : "logos:tailwindcss-icon"},
+      { "id": "7" ,"name": "react", "Icon" : "logos:react"},
+      {"id": "8" ,"name": "nextjs", "Icon" : "logos:nextjs-icon"},
+      { "id": "9" ,"name": "vue", "Icon" : "logos:vue"},
+      {"id": "10" ,"name": "nuxt", "Icon" : "logos:nuxt-icon"},
+      { "id": "11" ,"name": "gitlab", "Icon" : "logos:gitlab"},
+      {"id": "12" ,"name": "github", "Icon" : "mdi:github"},
+      {"id": "13" ,"name": "supabase", "Icon" : "logos:supabase-icon"},
+      { "id": "14" ,"name": "firebase", "Icon" : "logos:firebase"},
+      {"id": "15" ,"name": "rails", "Icon" : "mdi:language-ruby-on-rails"},
+      { "id": "16" ,"name": "Sinatra", "Icon" : "logos:sinatra"}
+    ]
+}

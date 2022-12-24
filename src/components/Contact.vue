@@ -11,7 +11,7 @@
           <div class="md:p-4 h-full">
             <div>
               <img
-                src="../assets/logo.svg"
+                src="../assets/ContactPic.jpg"
                 class="rounded-xl hover:scale-105 ease-in duration-300"
               />
               <h2 class="py-2">Name</h2>

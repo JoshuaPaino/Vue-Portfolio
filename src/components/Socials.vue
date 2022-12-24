@@ -31,7 +31,7 @@
 </template>
 <script>
 import { Icon } from "@iconify/vue";
-import dbData from "../db.json";
+import dbData from "../constants.json";
 
 export default {
   data() {

@@ -1,12 +1,12 @@
 {
     "projects": [
-      { "id": "1" ,"title": "Portfolio", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG", "fw" : "Vue"},
-      {"id": "2" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"},
-      { "id": "3" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"},
-      {"id": "4" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"},
-      { "id": "5" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"},
-      {"id": "6" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"},
-      { "id": "7" ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue"}
+      { "id": 1 ,"title": "Portfolio", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG", "fw" : "Vue" , "slug" : "l"},
+      {"id": 2 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "lo"},
+      { "id": 3 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "lor"},
+      {"id": 4 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "lore"},
+      { "id": 5 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "lorem"},
+      {"id": 6 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "loremI"},
+      { "id": 7 ,"title": "title", "description" : "loremIpsum", "source" : "../src/assets/VPortfolio.JPG" , "fw" : "Vue" , "slug" : "loremIp"}
     ],
     "skills": [
       { "id": "1" ,"name": "HTML5", "Icon" : "logos:html-5" },

@@ -29,7 +29,7 @@
   </div>
 </template>
 <script>
-import dbData from "../db.json";
+import dbData from "../constants.json";
 
 export default {
   data() {

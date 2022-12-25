@@ -1,5 +1,6 @@
 <template>
-  <div class="w-full lg:h-screen">
+  <div id="contact" class="w-full lg:h-screen">
+    <SpacerVue />
     <div class="max-w-[1240px] m-auto px-2 py-16 w-full">
       <p class="text-xl tracking-widest">Contact</p>
       <h2 class="py-4 text-2xl font-bold">Get In Touch</h2>
@@ -84,6 +85,7 @@
   </div>
 </template>
 <script setup>
+import SpacerVue from "./Spacer.vue";
 import Socials from "../components/Socials.vue";
 import ScrollTop from "../components/ScrollTop.vue";
 </script>

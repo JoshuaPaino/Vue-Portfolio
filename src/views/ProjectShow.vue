@@ -6,6 +6,8 @@
 </template>
 <script>
 import SourceData from "../constants.json";
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
 export default {
   computed: {
     projectId() {

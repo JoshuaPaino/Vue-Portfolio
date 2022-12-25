@@ -19,9 +19,17 @@ import RiLinkedinFill from "~icons/ri/linkedin-fill";
 import RiGithubFill from "~icons/ri/github-fill";
 import RiTwitterFill from "~icons/ri/twitter-fill";
 </script>
+<script>
+import dbData from "../constants.json";
+export default {
+  data() {
+    return { navLinks: dbData.navLinks };
+  },
+};
+</script>
 <template>
   <nav
-    class="fixed dark:bg-slate-800 bg-white w-full h-[120px] z-50 shadow-xl p-4"
+    class="fixed dark:bg-slate-800 bg-white w-full h-[90px] z-50 shadow-xl p-4"
   >
     <div class="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <img
@@ -110,7 +118,18 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
         <div class="py-4 flex flex-col">
           <ul class="uppercase">
             <!--  -->
-            <NavM />
+            <a
+              @click="toggle()"
+              v-for="navLink in navLinks"
+              :key="navLink.id"
+              :href="navLink.location"
+              ><li class="py-4 text-lg">
+                <span
+                  class="border-blue-800 dark:border-white hover:border-b"
+                  >{{ navLink.link }}</span
+                >
+              </li></a
+            >
             <!--  -->
           </ul>
           <!-- Socials -->

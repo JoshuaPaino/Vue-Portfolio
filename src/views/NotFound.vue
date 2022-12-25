@@ -1,5 +1,14 @@
 <template>
-  <Navbar />
+  <nav class="fixed dark:bg-slate-800 bg-white w-full h-[120px] z-50 p-4">
+    <div class="flex justify-center items-center w-full h-full px-2 2xl:px-16">
+      <img
+        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+        alt="Your Company"
+        width="125"
+        height="50"
+      />
+    </div>
+  </nav>
   <main class="w-full h-screen text-center">
     <div
       class="max-w-[1240px] w-full h-full text-center mx-auto flex justify-center items-center"
@@ -39,4 +48,7 @@
 
 <script setup>
 import Navbar from "../components/Navbar.vue";
+
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark();
 </script>

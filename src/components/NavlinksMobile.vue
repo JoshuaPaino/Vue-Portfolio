@@ -1,13 +1,10 @@
 <template>
-  <router-link
-    v-for="navLink in navLinks"
-    :key="navLink.id"
-    :to="navLink.location"
+  <a v-for="navLink in navLinks" :key="navLink.id" :href="navLink.location"
     ><li class="py-4 text-lg">
       <span class="border-blue-800 dark:border-white hover:border-b">{{
         navLink.link
       }}</span>
-    </li></router-link
+    </li></a
   >
 </template>
 <script>

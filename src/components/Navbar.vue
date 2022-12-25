@@ -142,7 +142,3 @@ import RiTwitterFill from "~icons/ri/twitter-fill";
     <!-- Transition for this -->
   </nav>
 </template>
-<!--  -->
-<style>
-/*  */
-</style>

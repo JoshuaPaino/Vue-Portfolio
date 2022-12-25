@@ -11,9 +11,7 @@
 </template>
 <script setup>
 import CharmChevronsUp from "~icons/charm/chevrons-up";
-
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 </script>
-<style></style>

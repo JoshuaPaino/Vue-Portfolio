@@ -13,4 +13,3 @@
 <script setup>
 import ProjectList from "./ProjectList.vue";
 </script>
-<style></style>

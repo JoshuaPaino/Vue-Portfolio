@@ -9,7 +9,6 @@
 </template>
 <script>
 import dbData from "../constants.json";
-
 export default {
   data() {
     return { navLinks: dbData.navLinks };

@@ -1,7 +1,21 @@
 <template>
-  <div class="about">
-    <h1>TBD</h1>
-  </div>
+  <main class="about">
+    <h1>Hello {{ $route.params.id }}</h1>
+    {{ project.title }}
+  </main>
 </template>
-
-<style></style>
+<script>
+import SourceData from "../constants.json";
+export default {
+  computed: {
+    projectId() {
+      return parseInt(this.$route.params.id);
+    },
+    project() {
+      return SourceData.projects.find(
+        (project) => project.id === this.projectId
+      );
+    },
+  },
+};
+</script>

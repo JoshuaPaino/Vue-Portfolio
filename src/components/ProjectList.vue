@@ -20,7 +20,7 @@
       <p class="text-center pb-4">
         {{ project.description }}
       </p>
-      <RouterLink to="/">
+      <RouterLink :to="{ name: 'project.show', params: { id: project.id } }">
         <p class="text-center py-3 rounded-lg dark:bg-black bg-white">
           Go to Project
         </p>
@@ -30,11 +30,9 @@
 </template>
 <script>
 import dbData from "../constants.json";
-
 export default {
   data() {
     return { projects: dbData.projects };
   },
 };
 </script>
-<style lang=""></style>

@@ -87,4 +87,3 @@
 import Socials from "../components/Socials.vue";
 import ScrollTop from "../components/ScrollTop.vue";
 </script>
-<style></style>

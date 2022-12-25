@@ -32,7 +32,6 @@
 <script>
 import { Icon } from "@iconify/vue";
 import dbData from "../constants.json";
-
 export default {
   data() {
     return { socialLinks: dbData.socialLinks };
@@ -42,4 +41,3 @@ export default {
   },
 };
 </script>
-<style></style>

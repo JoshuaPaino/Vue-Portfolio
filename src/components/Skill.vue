@@ -23,7 +23,6 @@
 <script>
 import { Icon } from "@iconify/vue";
 import dbData from "../constants.json";
-
 export default {
   data() {
     return { skills: dbData.skills };

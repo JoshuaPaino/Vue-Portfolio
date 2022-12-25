@@ -16,4 +16,3 @@
 // import Skill
 import Skill from "./Skill.vue";
 </script>
-<style></style>
